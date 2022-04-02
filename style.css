@@ -1,3 +1,4 @@
+/* geral */
 *{
     font-family: 'League Spartan', sans-serif;
     margin: 0;
@@ -5,11 +6,13 @@
     box-sizing: border-box;
 }
 
+/* criando váriaveis para as cores que forem ser utilizadas */
 :root{
     --text-color: #667085;
     --main-color: #8E2424; 
 }
 
+/* css - menu header */
 header{
     display: flex;
     flex-direction: column;
@@ -85,6 +88,8 @@ li{
     line-height: 24px;
     color: white;
 }
+
+/* section cabeçalho */
 .cabecalho{
     display: flex;
     flex-direction: column;
@@ -131,4 +136,56 @@ li{
     line-height: 30px;
     text-align: center;
     color: var(--text-color);
+}
+
+/* css - section - métricas */
+.metricas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 32px;
+}
+.container_metricas{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    grid-gap: 32px;
+}
+.content_box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+}
+.title_number > h1{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -0.02rem;
+    color: var(--main-color);
+}
+.pr_metricas{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    width: 280px;
+    height: 84px;
+}
+.pr_metricas > span{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #101828;
+}
+.pr_metricas > p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color:#667085;
+    
 }
